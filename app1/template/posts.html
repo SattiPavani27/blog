@@ -1,0 +1,176 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>user posts</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/static/images/img90.jpeg');
+      background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #121111;
+    }
+    .login-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      border-radius: 40px;
+      text-align: center;
+    }
+    
+    
+    .login-form input,
+    .login-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .login-form button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .login-form button:hover {
+      background-color: #45a049;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-form" method="POST">
+      {% csrf_token %}
+
+      <h2>User's post submission</h2>
+      <input type="title" name="title" placeholder="Title" required>
+      <input type="text" name="description" placeholder="description" required>
+      <input type="text" name="date_and_time" placeholder="date_and_time" required>
+      
+      <button type="submit" class="btn btn-primary">submit</button>
+
+      
+     <p><button type="submit"><a href="http://127.0.0.1:8000/index/">save and edit you content here</a></button></p>
+
+      <!-- http://127.0.0.1:8000/index/ -->
+      
+    <!-- </form>
+
+  </div class="click-container">
+  <div>
+  <h2><B>You can check others posts before adding yours</B></h2>
+  <button type="submit"><a href="http://127.0.0.1:8000/posts_data/">click</a></button>
+</div>
+</body>
+</html> -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>User Posts</title>
+     <style>
+         body {
+             margin: 0;
+             padding: 0;
+             font-family: Arial, sans-serif;
+             background-image: url('/static/images/img90.jpeg');
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+         }
+         h2 {
+             font-size: 2rem;
+             margin-bottom: 20px;
+             color: #f70b0b;
+         }
+         .login-container {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             background-color: rgba(255, 255, 255, 0.8);
+             padding: 40px;
+             border-radius: 40px;
+             text-align: center;
+         }
+ 
+         .login-form input,
+         .login-form button {
+             display: block;
+             width: 100%;
+             padding: 10px;
+             margin-bottom: 10px;
+             border-radius: 5px;
+             border: 1px solid #ccc;
+         }
+ 
+         .login-form button {
+             background-color: #4CAF50;
+             color: white;
+             cursor: pointer;
+             /* Increase button size */
+             padding: 15px;
+             font-size: 1rem;
+         }
+         button {
+          background-color: #4caf50;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+ 
+         .login-form button:hover {
+             background-color: #45a049;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="login-container">
+         <form class="login-form" method="POST">
+             {% csrf_token %}
+             <h2>User's post submission</h2>
+             <input type="title" name="title" placeholder="Title" required>
+             <input type="text" name="description" placeholder="description" required>
+             <input type="text" name="date_and_time" placeholder="date_and_time" required>
+             <button type="submit" class="btn btn-primary">submit</button>
+             <p><button type="submit"><a href="http://127.0.0.1:8000/index/">save and edit your content here</a></button></p>
+         </form>
+     </div>
+ 
+     <div class="click-container">
+         <div>
+             <h2 style="filter: brightness(600%)"><b>You can check others posts before adding yours</b></h2>
+             <button type="submit"><a href="http://127.0.0.1:8000/posts_data/">click</a></button>
+         </div>
+         <div class="click-container">
+          <div>
+              <h2><b>Go to home page</b></h2>
+              <button type="submit"><a href="http://127.0.0.1:8000/home/">click</a></button>
+          </div>
+     </div>
+ </body>
+ </html>
+ 

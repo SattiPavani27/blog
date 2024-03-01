@@ -1,0 +1,114 @@
+<!-- <ul>
+    {% for TextCheck in texts %}
+    <p>{{TextCheck.corrected_text}}</p>
+        {% endfor %}
+</ul> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Checks Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Text Checks Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>original_text</th>
+                <th>Corrected Text</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for TextCheck in texts %}
+                <tr>
+                    <td>{{ TextCheck.original_text }}</td>
+
+                    <td>{{ TextCheck.corrected_text }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Checks Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center; /* Center the text */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Text Checks Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Corrected Text</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for TextCheck in texts %}
+                <tr>
+                    <td>{{ TextCheck.corrected_text }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> -->

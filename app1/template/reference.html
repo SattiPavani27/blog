@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            width: 100%;
+            background-color: #0c0b0b; /* Optional background color for the header */
+            color: white; /* Optional text color for the header */
+        }
+
+         h1 {
+            color: #f6f7fa;
+        } 
+        
+        h2 {
+            color: #0a3cd3;
+        } 
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Display the list items horizontally */
+        }
+
+        li {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            margin-right: 300px; /* Add margin between the items */
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        img {
+            width: 300px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
+            margin-bottom: 10px; /* Add space between image and text */
+        }
+
+        span {
+            text-align: center; /* Center the text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1>REFERENCE WEBSITES</h1>
+    </header>
+    <div class="click-container">
+        <div>
+            <h2><b>Go to home page</b></h2>
+            <button type="submit"><a href="http://127.0.0.1:8000/home/">click</a></button>
+        </div>
+   </div>
+    <ul>
+        <li>
+            <a href="http://www.afterthedeadline.com/" target="_blank">
+                <img src="/static/images/img21.jpeg" alt="Reference Website-1">
+                <span><h2><u>Edit your styles</h2></u></span>
+            </a>
+        </li>
+        <li> <a href="https://www.grammarly.com/" target="_blank">
+            <img src="/static/images/img22.jpeg" alt="Reference Website-2">
+                <span><h2><u>Edit your grammer<u> </h2></u></span>
+            </a>
+        </li>
+        <!-- Add more items as needed -->
+    </ul>
+    <ul>
+        <li>
+            <a href="https://prowritingaid.com/" target="_blank">
+                <img src="/static/images/img23.jpeg" alt="Reference Website-3">
+                <span><u><h2>Edit your entire content</h2></u></span>
+            </a>
+        </li>
+        <li>
+            <a href="https://hemingwayapp.com/" target="_blank">
+                <img src="/static/images/img24.jpeg" alt="Reference Website-4">
+                <span><h2><u>Add extra features here</h2></u></span>
+            </a>
+        </li>
+        <!-- Add more items as needed -->
+    </ul>
+</body>
+</html>
